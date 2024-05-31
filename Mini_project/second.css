@@ -1,0 +1,45 @@
+.contentBox__top__img1 {
+  width: 50%;
+}
+
+.contentBox__top__img1 > img {
+  width: 150px;
+}
+
+.contentBox__top1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  height: 180px;
+  width: 330px;
+}
+
+.info__top__gymName1 {
+  width: 500px;
+}
+
+.info__bottom1 {
+}
+
+.contentBox1 {
+  position: relative;
+  height: 240px;
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+}
+
+.info__bottom__price1 {
+  position: absolute;
+  right: 10px;
+  bottom: 60px;
+  font-size: 20px;
+}
+
+.sale1 {
+}
+
+.info__bottom__dayPass__passType1 {
+  position: absolute;
+  color: rgb(84, 103, 245);
+  bottom: 60px;
+}
