@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'YangjuByeolsanA1';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405@1.0/YangjuByeolsanA1.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .first {
   display: flex;
   flex-direction: column;
@@ -13,7 +20,7 @@
   width: 402px;
   height: 365px;
   color: white;
-  font-size: 115px;
+  font-size: 100px;
 }
 
 .Hello {
@@ -21,8 +28,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "YangjuByeolsanA1";
 }
 
-.intro__down{
-    margin-top: 130px;
+.intro__down {
+  margin-top: 200px;
+  font-size: 50px;
 }
