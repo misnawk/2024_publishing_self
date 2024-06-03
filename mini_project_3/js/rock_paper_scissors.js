@@ -22,14 +22,24 @@ changeImg();
 const intervalId = setInterval(changeImg, 500);
 
 /////////////////////선택////////////////////////////////
+
+let userWin = 0;
+let pcWin = 0;
+const modal = document.querySelector(".modal");
+
 const scissors = document.querySelector(".scissors");
 scissors.addEventListener("click", () => {
-  const scissors = 1;
+  const scissors = 0;
 
   clearInterval(intervalId);
-  console.log(ArrayIndex - 1); //0출력
+  console.log(ArrayIndex - 1 + "나옴");
 
-  if (ArrayIndex - 1 == scissors) {
+  if (ArrayIndex - 1 == rock) {
+    console.log("비김");
+  } else if (ArrayIndex - 1 == 2) {
+    console.log("이김");
+  } else {
+    console.log("짐");
   }
 });
 
@@ -41,16 +51,27 @@ rock.addEventListener("click", () => {
   console.log(ArrayIndex - 1); //0출력
 
   if (ArrayIndex - 1 == rock) {
+    console.log("비김");
+    modal.classList.add("block");
+  } else if (ArrayIndex - 1 == 0) {
+    console.log("이김");
+  } else {
+    console.log("짐");
   }
 });
 
 const paper = document.querySelector(".paper");
 paper.addEventListener("click", () => {
-  const paper = 1;
+  const paper = 2;
 
   clearInterval(intervalId);
   console.log(ArrayIndex - 1); //0출력
 
   if (ArrayIndex - 1 == paper) {
+    console.log("비김");
+  } else if (ArrayIndex - 1 == 1) {
+    console.log("이김");
+  } else {
+    console.log("짐");
   }
 });
