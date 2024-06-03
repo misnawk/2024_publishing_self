@@ -1,0 +1,28 @@
+.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.intro {
+  z-index: 1;
+  width: 402px;
+  height: 365px;
+  color: white;
+  font-size: 115px;
+}
+
+.Hello {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro__down{
+    margin-top: 130px;
+}
