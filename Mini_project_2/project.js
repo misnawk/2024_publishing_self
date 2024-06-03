@@ -134,6 +134,7 @@ backendData.pageProps.data.events.data.map(
     discountedCost,
   }) => {
     const after = `
+    
         <div class = "contentBox">
             <img class="contentBox_img" src="${titleImage}" alt="">
 
@@ -170,8 +171,7 @@ backendData.pageProps.data.events.data.map(
                 <span class="vat">VAT포함</span>
             </div>
         </div>
-
-        
+ 
        
     `;
 
@@ -357,6 +357,7 @@ backendData.pageProps.data.events.data.map(
         ? nav__back_and_img__box__right__input.classList.add("hidden")
         : nav__back_and_img__box__right__input.classList.remove("hidden");
     });
-    section.insertAdjacentHTML("beforeend", after);
+    const main = document.querySelector("main");
+    main.insertAdjacentHTML("beforeend", after);
   }
 );

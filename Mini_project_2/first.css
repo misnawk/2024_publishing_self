@@ -5,6 +5,7 @@
 .topMenu {
   display: flex;
   align-items: center;
+  max-width: 600px;
   width: 600px;
   height: 68px;
   margin: 0 auto;

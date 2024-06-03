@@ -11,12 +11,13 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 579.6px;
+  max-width: 600px;
+  width: 100%;
   height: 120px;
   margin: 0 auto;
   border: 1px solid #dbdbdb;
   border-top: none;
-  padding: 16px 26px;
+  padding: 16px;
 }
 
 .contentBox_img {
@@ -87,4 +88,3 @@
   font-size: 10px;
   font-weight: 600;
 }
-
