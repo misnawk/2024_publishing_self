@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="../../../HTML & CSS/common/reset.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/find_different_color.css" />
@@ -10,8 +10,33 @@
   </head>
   <body>
     <main>
-      <div class="box">
-        
+      <div class="modal hidden">
+        <div class="modal-content">
+          <span class="endGame">게임종료!</span>
+          <span class="history">기록: STAGE 1</span>
+          <span class="try">한 번 더 해볼까요?</span>
+          <button class="closeBtn">닫기</button>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="time">
+          <span class="time__img"><img src="../photo1/time.png" alt="" /></span>
+          <span class="count">15</span>
+        </div>
+        <div>
+          <span>STAGE 1</span>
+        </div>
+        <div class="home">
+          <span class="home__img"><img src="../photo1/home.png" alt="" /></span>
+        </div>
+      </div>
+      <div class="game">
+        <div class="palette">
+          <div class="palette__item">1</div>
+          <div class="palette__item">2</div>
+          <div class="palette__item">3</div>
+          <div class="palette__item">4</div>
+        </div>
       </div>
     </main>
   </body>
