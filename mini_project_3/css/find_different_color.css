@@ -1,0 +1,10 @@
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(a, 1fr);
+}
