@@ -17,7 +17,7 @@ function changeImg() {
 }
 
 changeImg();
-let intervalId = setInterval(changeImg, 500); // 0.5초마다 changeImg 함수 실행
+let intervalId = setInterval(changeImg, 0.05); // 0.5초마다 changeImg 함수 실행
 
 const close_btn = document.querySelector(".close_btn");
 close_btn.addEventListener("click", closeBtn_fn);
@@ -191,14 +191,14 @@ paper.addEventListener("click", () => {
 function closeBtn_fn() {
   modal.classList.add("hidden");
   clearInterval(intervalId); // 기존 interval 중지
-  intervalId = setInterval(changeImg, 500); // 새로운 interval 설정
+  intervalId = setInterval(changeImg, 0.05); // 새로운 interval 설정
   console.log("닫히냐???");
 }
 
 function closeBtn__end_fn() {
   modal_end.classList.add("hidden");
   clearInterval(intervalId); // 기존 interval 중지
-  intervalId = setInterval(changeImg, 500); // 새로운 interval 설정
+  intervalId = setInterval(changeImg, 0.05); // 새로운 interval 설정
 }
 
 function result() {
