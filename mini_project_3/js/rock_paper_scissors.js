@@ -192,7 +192,6 @@ function closeBtn_fn() {
   modal.classList.add("hidden");
   clearInterval(intervalId); // 기존 interval 중지
   intervalId = setInterval(changeImg, 0.05); // 새로운 interval 설정
-  console.log("닫히냐???");
 }
 
 function closeBtn__end_fn() {
@@ -240,7 +239,7 @@ function end() {
   end3.innerHTML = `<span style="color: blue;">${user / 10}번</span>의 승리`;
   end4.innerHTML = `<span style="color: red;">${pc / 10}번</span>의 패배`;
 
-  end5.innerHTML = `<span style="color : green;"> ${tie}</span>의 무승부`;
+  end5.innerHTML = `<span style="color : green;"> ${tie}번</span>의 무승부`;
 
   let countdown_end = 10;
   countdownInterval_end = setInterval(() => {

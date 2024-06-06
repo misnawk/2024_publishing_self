@@ -1,6 +1,7 @@
 @font-face {
-  font-family: 'YangjuByeolsanA1';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405@1.0/YangjuByeolsanA1.woff2') format('woff2');
+  font-family: "YangjuByeolsanA1";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405@1.0/YangjuByeolsanA1.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -13,6 +14,11 @@
   width: 100vw;
   height: 100vh;
   background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .intro {
@@ -32,6 +38,24 @@
 }
 
 .intro__down {
-  margin-top: 200px;
-  font-size: 50px;
+  margin-top: 30px;
+  opacity: 1;
+  animation: fadeIn 0.5s forwards;
+  font-size: 100px;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.downImg {
+  margin: 20px;
+  color: white;
+  opacity: 0; /* 처음에는 보이지 않도록 설정 */
+  transition: opacity 0.5s ease; /* 서서히 나타나게 하기 위한 트랜지션 */
 }
